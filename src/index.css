@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-grotesk: "Space Grotesk", sans-serif;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 text-base font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-950 disabled:opacity-50 disabled:pointer-events-none duration-300;
+}
+
+.btn-primary {
+  @apply bg-amber-400 text-slate-950 hover:bg-amber-500 focus:ring-amber-400/40;
+}
+
+.btn-outline {
+  @apply border border-amber-400 text-amber-400 hover:bg-amber-400/10 focus:ring-amber-400/30;
+}
+
+.btn-neutral {
+  @apply border border-white/20 text-slate-200 hover:bg-white/5 focus:ring-white/20;
+}
+
+/* Size modifiers */
+.btn-sm {
+  @apply px-4 py-2 text-sm rounded-md duration-300;
+}
+
+.btn-md {
+  @apply px-6 py-3 text-base;
+}
+
+.btn-lg {
+  @apply px-8 py-4 text-lg;
+}
+button{
+  cursor: pointer;
+}
